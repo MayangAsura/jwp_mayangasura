@@ -56,7 +56,7 @@ class Auth_model extends CI_Model
         }
         $new_password = $this->get_random_string(6);
 
-        $this->db->update($this->table, ['password' => md5($new_password), 'updated_on' => date('Y-m-d H:i:s')], ['id' => $user['id']]);
+        $this->db->update($this->table, ['password' => md5($new_password), 'updated_on' => date('Y-m-d H:i:s'), 'updated_by' => $user['id']], ['id' => $user['id']]);
 
         $user['password'] = $new_password;
 
