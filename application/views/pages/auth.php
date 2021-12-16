@@ -34,13 +34,12 @@
                     <!-- <hr> -->
                   </form>
                   <div class="text-center">
-                    <a href="<?= base_url('register') ?>">Belum Punya Akun? |</a> <a href="<?= base_url('forgotpassword') ?>">Forgot Password?</a> 
+                    <a href="<?= base_url('register') ?>">Create an Account |</a> <a href="<?= base_url('forgotpassword') ?>">Forgot Password</a> 
                   </div>
                   <hr>
                   <div class="text-center">
                     <p class="small">
                       JWP Mayang Asura - Coralis Studio
-                       <!-- <br> <a class="font-weight-bold " href="https://sabilulkhayr.com">Sabilul Khayr Al Ibana by IT SKAI.</a> -->
                     </p>
                   </div>
                 </div>
