@@ -13,7 +13,6 @@ class Auth extends CI_Controller
 
     public function index()
     {
-        // var_dump('masuk');die();
         if ($this->session->userdata('id'))
             redirect('home');
 
@@ -31,7 +30,7 @@ class Auth extends CI_Controller
     public function registration(){
         
         if ($this->session->userdata('id')) {
-            redirect();
+            redirect($_SERVER['HTTP_REFERER']);
         } else {
 
             $session = isset($_SESSION['registration']) ? $_SESSION['registration'] : [];
@@ -53,7 +52,7 @@ class Auth extends CI_Controller
     public function login(){
 
         if ($this->session->userdata('id'))
-            redirect($_SERVER['HTTP_REFERRER']);
+            redirect($_SERVER['HTTP_REFERER']);
         
 
         $this->form_validation->set_rules('email', 'Email', 'trim|required');
@@ -219,7 +218,7 @@ class Auth extends CI_Controller
     public function logout(){
         
         $this->session->sess_destroy();
-        redirect($_SERVER['HTTP_REFERRER']);
+        redirect($_SERVER['HTTP_REFERER']);
     }
 
 
