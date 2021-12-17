@@ -64,7 +64,7 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="font-weight-bold small" href="<?= base_url() ?>">Sudah punya akun?</a>
+                    <a class="font-weight-bold small" href="<?= base_url() ?>">Already have an account?</a>
                   </div>
                   <div class="text-center">
                   </div>
